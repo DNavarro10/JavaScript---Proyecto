@@ -5,11 +5,10 @@ $ptseri : 'PT Serif', serif
     margin: 0
     padding: 0
     list-style: none
+    text-decoration: none
 
 body
-    
     box-sizing: border-box      
-    font-family: $ptseri
     background: url("/IMG/35mm-aerial-aerial-shot-1105766.jpg")
     background-attachment: fixed
     .container
@@ -52,26 +51,50 @@ body
                             background: green
                         a   
                             display: block
-                            text-decoration: none
+                            
                             color: white
                             padding: 0px 30px 0px 30px
                        
         .content
-            display: flex   
+            display: flex
             font-family: $monserrat
             height: 400px
-
+           
             .slider
+                display: flex   
                 width: 40%
                 height: 100%
                 font-family: $monserrat
                 background: red
-                display: flex
-               
+                align-items: center
+                justify-content: center
             .post
+                display: flex
                 width: 60%
-                font-family: $monserrat
+                font-family: $ptseri
                 background: green
+                article
+                    display: flex
+                    padding: 20px
+                    flex-direction: column
+                    h2 
+                        font-family: $monserrat
+                        font-weight: 900
+                        font-size: 25px
+                        
+                    #date
+                        color: gray
+                        
+                    p
+                        margin-top: 15px
+                        font-family: $monserrat
+                    .btn-leer
+                        align-self: flex-end
+                        width: 70px
+                        padding: 15px
+                        background: gray
+                        color: white
+                        margin-top: 10px
 
                     
                     
