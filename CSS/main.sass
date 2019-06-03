@@ -55,19 +55,22 @@ body
                             color: white
                             padding: 0px 30px 0px 30px
                        
+      
+        .slider
+            display: flex
+            width: 100%
+            height: 100px
+            font-family: $monserrat
+            background: red
+            align-items: center
+            justify-content: center
+            align-self: center
+
         .content
             display: flex
             font-family: $monserrat
             height: 400px
-           
-            .slider
-                display: flex   
-                width: 40%
-                height: 100%
-                font-family: $monserrat
-                background: red
-                align-items: center
-                justify-content: center
+                    
             .post
                 display: flex
                 width: 60%
@@ -85,7 +88,8 @@ body
                     #date
                         color: gray
                         
-                    p
+                    p   
+                        text-align: justify
                         margin-top: 15px
                         font-family: $monserrat
                     .btn-leer
@@ -95,5 +99,41 @@ body
                         background: gray
                         color: white
                         margin-top: 10px
+            .aside
+                display: flex
+                align-items: center
+                justify-content: center
+                width: 40%
+                background: blue
+                padding: 10px
+                align-content: center
+                
+                h4
+                    font-family: $monserrat
+                    font-size: 20px
+                    padding: 10px
+                img
+                    width: 90%
+                    justify-content: center
+
+
+    .foot
+        margin: 0 auto
+        height: 100px
+        width: 70%
+        margin-bottom: 15px
+        background: blue
+        color: white
+        display: flex
+        align-items: center
+        align-content: space-between
+        text-align: center
+        justify-content: center
+        div
+           width: 25%
+           margin: 10px
+           background: gray
+           height: 70px
+        
 
                     

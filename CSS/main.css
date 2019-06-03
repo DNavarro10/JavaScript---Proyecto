@@ -70,20 +70,12 @@ body .container .header .menu ul li a {
   padding: 0px 30px 0px 30px;
 }
 
-body .container .content {
+body .container .slider {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-family: "Montserrat", sans-serif;
-  height: 400px;
-}
-
-body .container .content .slider {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 40%;
-  height: 100%;
+  width: 100%;
+  height: 100px;
   font-family: "Montserrat", sans-serif;
   background: red;
   -webkit-box-align: center;
@@ -92,6 +84,16 @@ body .container .content .slider {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+body .container .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  height: 400px;
 }
 
 body .container .content .post {
@@ -125,6 +127,7 @@ body .container .content .post article #date {
 }
 
 body .container .content .post article p {
+  text-align: justify;
   margin-top: 15px;
   font-family: "Montserrat", sans-serif;
 }
@@ -137,5 +140,63 @@ body .container .content .post article .btn-leer {
   background: gray;
   color: white;
   margin-top: 10px;
+}
+
+body .container .content .aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 40%;
+  background: blue;
+  padding: 10px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+body .container .content .aside h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  padding: 10px;
+}
+
+body .container .content .aside img {
+  width: 90%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .foot {
+  margin: 0 auto;
+  height: 100px;
+  width: 70%;
+  margin-bottom: 15px;
+  background: blue;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .foot div {
+  width: 25%;
+  margin: 10px;
+  background: gray;
+  height: 70px;
 }
 /*# sourceMappingURL=main.css.map */
