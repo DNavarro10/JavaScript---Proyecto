@@ -1,6 +1,10 @@
 $monserrat : 'Montserrat', sans-serif
+$noto : 'Noto Sans', sans-serif
 $ptseri : 'PT Serif', serif
+$fondo : rgba(6,6,6, 0.8)
 
+$color1 : #19455a
+$sombra : #0d3451
 *
     margin: 0
     padding: 0
@@ -15,69 +19,76 @@ body
         width: 70%
         margin: 0px auto
         margin-top: 25px
-        background: white
-        box-shadow: 5px 5px 15px black
+        
         .header 
+            color: #ffffff
             margin-top: 10px
             display: flexbox
             padding: 20px
-            background: blue
+            background: $fondo
             font-family: $monserrat
+            box-shadow: 0px 0px 5px $sombra
             .logo
                 text-transform: uppercase
                 font-family: $monserrat
                 padding: 4px
                 letter-spacing: 2px
-                background: gray
+                background: $color1
                 width: 330px
                 text-align: center
                 margin-bottom: 20px
-                
+                h1 
+                    font-weight: bolder
             .menu   
                 color: red 
                 width: 100%
-                background: gray
+                background: red
                 text-transform: uppercase
                 margin-bottom: 20px
                 ul
                     line-height: 46px
-                    background: gray
+                    background: $color1
                     li
                         height: 46px
                         display: inline-block
                         transition: all 300ms
                        
                         &:hover
-                            background: green
+                            background: $sombra
                         a   
                             display: block
-                            
                             color: white
                             padding: 0px 30px 0px 30px
                        
       
         .slider
+            color: white
             display: flex
             width: 100%
-            height: 100px
+            height: 200px
+            margin-top: 15px
+            margin-bottom: 15px
             font-family: $monserrat
-            background: red
+            background: $fondo
             align-items: center
             justify-content: center
             align-self: center
+            box-shadow: 0px 0px 5px $sombra
 
         .content
             display: flex
             font-family: $monserrat
             height: auto
-            border: 2px solid white
-                    
+                                
             .post
+                box-shadow: 0px 0px 5px $sombra
                 display: flex
                 width: 60%
                 font-family: $ptseri
-                background: green
+                background: $fondo
+                color: #fff
                 article
+                    margin-top: 10px
                     display: flex
                     padding: 20px
                     flex-direction: column
@@ -88,28 +99,42 @@ body
                         
                     #date
                         color: gray
+                        font-style: italic
                         
                     p   
                         text-align: justify
                         margin-top: 15px
                         font-family: $monserrat
                     .btn-leer
+                        text-align: center
+                        font-family: $noto
                         align-self: flex-end
                         width: 70px
-                        padding: 15px
-                        background: gray
+                        font-size: 14px
+                        padding: 10px
+                        border-radius: 6px
+                        background: $color1
                         color: white
                         margin-top: 10px
+                        transition: all .3s
+                        box-shadow: 1px 1px 5px $sombra
+                        &:hover
+                            background: $sombra
+                       
             .aside
+                box-shadow: 0px 0px 5px $sombra
+                margin-left: 10px
                 display: flex
                 justify-content: center
                 flex-direction: column
                 width: 40%
                 height: 100%
-                background: blue
+                background: $fondo
                 padding: 10px
+                color: #fff
                                                
                 .about
+                    margin-top: 10px
                     display: flex
                     flex-direction: column
                     align-items: center
@@ -118,11 +143,14 @@ body
                         font-size: 20px
                         padding: 10px
                     img
+                        margin-top: 20px
+                        margin-bottom: 10px
                         width: 90%
-                        box-shadow: 2px 2px 10px white
+                        box-shadow: 2px 2px 10px $sombra
 
                     p
-                        margin-top: 10px
+                        margin-top: 2px
+                        font-size: 14px
                         margin-bottom: 10px
                         padding: 5px
                         text-align: justify 
@@ -135,6 +163,12 @@ body
                         align-self: center
                         align-items: center
 
+                        table
+                            border-radius: 5px
+                            width: 60%
+                            margin-bottom: 25px
+                            background: $color1
+                            box-shadow: 0px 0px 5px $sombra
                         h4 
                             align-content: center
                             margin-top: 10px
@@ -142,56 +176,65 @@ body
                         tr
                             display: flex
                             flex-direction: column
-                            margin-bottom: 15px
+                            margin-bottom: 5px
                             margin-top: 5px
                             align-items: center
                         td
                             margin-top: 2px
                         input[type="text"],input[type="password"],input[type="email"]
+                            width: 180px
                             padding: 5px
                             border-radius: 3px
                             border: 1px solid #ccc
 
                         .btn-enviar
-                            font-family: $monserrat
+                            text-align: center
+                            font-family: $noto
+                            align-self: flex-end
                             width: 70px
-                            cursor: pointer
-                            padding: 7px
-                            margin-top: 15px
-                            border: 1px solid gray
-                            border-radius: 4px
+                            font-size: 14px
+                            padding: 10px
+                            border-radius: 6px
+                            background: $color1
+                            color: white
+                            margin-top: 10px
+                            transition: all .3s
+                            box-shadow: 0px 0px 2px white
+                            border: 0px solid 
                             margin-bottom: 10px
-                            font-weight: bolder
-                            transition: all 0.3s
+                           
                             
                             &:hover
-                                background: green
-                                border: 1px solid green
-                        
-                            
-               
-                    
-
-                    
-
+                                background: $sombra
+                                
+  
 
     .foot
+        box-shadow: 0px 0px 5px $sombra
         margin: 0 auto
         height: 100px
-        width: 70%
+        width: 100%
+        margin-top: 15px
         margin-bottom: 15px
-        background: blue
+        background: $fondo
         color: white
         display: flex
         align-items: center
         align-content: space-between
         text-align: center
         justify-content: center
-        div
-           width: 25%
+        .autor
+           display: flex
+           text-shadow: 1px 1px 5px black
+           font-family: $monserrat
+           align-content: center
+           align-items: center
+           text-align: center
+           padding: 0px 15px
            margin: 10px
-           background: gray
-           height: 70px
+           background: $color1
+           height: 50px
+           font-style: italic
         
 
                     
