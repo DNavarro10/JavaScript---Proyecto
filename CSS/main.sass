@@ -10,10 +10,20 @@ $sombra : #0d3451
     padding: 0
     list-style: none
     text-decoration: none
+//menu
+.menu-fixed 
+	position: fixed
+	z-index: 10
+	width: 70%
+	top: 0
+	height: 50px
+	transition: 0.3s ease
+
 
 body
     box-sizing: border-box      
     background: url("/IMG/35mm-aerial-aerial-shot-1105766.jpg")
+    background-size: cover
     background-attachment: fixed
     .container
         width: 70%
@@ -21,13 +31,14 @@ body
         margin-top: 25px
         
         .header 
-            color: #ffffff
+            
             margin-top: 10px
             display: flexbox
             padding: 20px
             background: $fondo
             font-family: $monserrat
             box-shadow: 0px 0px 5px $sombra
+            
             .logo
                 text-transform: uppercase
                 font-family: $monserrat
@@ -39,41 +50,56 @@ body
                 margin-bottom: 20px
                 h1 
                     font-weight: bolder
+                    text-shadow: 1px 1px 10px black
+                    color: white
             .menu   
-                color: red 
                 width: 100%
-                background: red
                 text-transform: uppercase
                 margin-bottom: 20px
+                transition: 0.7s all
+                height: 48px
+                
+                .active
+                        background: $sombra
+                        border-bottom: 2px solid red
                 ul
                     line-height: 46px
+                    height: 100%
                     background: $color1
+                    
                     li
+                        display: flex
+                        align-items: center
                         height: 46px
+                        padding: 0px 30px 0px 30px
                         display: inline-block
-                        transition: all 300ms
-                       
+                        transition: .7s all
+                        border-bottom: 2px solid trasnparent
+                    
                         &:hover
                             background: $sombra
+                            border-bottom: 2px solid red
+                                                       
                         a   
                             display: block
                             color: white
-                            padding: 0px 30px 0px 30px
+                            
                        
       
         .slider
             color: white
             display: flex
-            width: 100%
             height: 200px !important
             margin-top: 15px
             margin-bottom: 15px
             font-family: $monserrat
             background: $fondo
+            background-size: contain
             align-items: center
             justify-content: center
             align-self: center
             box-shadow: 0px 0px 5px $sombra
+            
         
         .content
             display: flex
@@ -87,6 +113,7 @@ body
                 font-family: $ptseri
                 background: $fondo
                 color: #fff
+    
                 article
                     margin-top: 10px
                     display: flex
@@ -120,7 +147,16 @@ body
                         box-shadow: 1px 1px 5px $sombra
                         &:hover
                             background: $sombra
-                       
+                hr
+                    display: flex
+                    width: 90%
+                    align-self: center
+                    height: 3px
+                    background: $color1
+                    border: 0px
+                    margin-top: 20px
+                
+                    
             .aside
                 box-shadow: 0px 0px 5px $sombra
                 margin-left: 10px
@@ -191,6 +227,7 @@ body
                             text-align: center
                             font-family: $noto
                             align-self: flex-end
+                            font-weight: bolder
                             width: 70px
                             font-size: 14px
                             padding: 10px
@@ -202,8 +239,8 @@ body
                             box-shadow: 0px 0px 2px white
                             border: 0px solid 
                             margin-bottom: 10px
+                            cursor: pointer
                            
-                            
                             &:hover
                                 background: $sombra
                                 

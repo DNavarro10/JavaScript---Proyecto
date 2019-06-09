@@ -2,7 +2,19 @@
 
 $(document).ready(function(){
     
-    $('.bxslider').bxSlider({
+    //nav 
+    $('#menu a').click(function () {
+        
+        $('#menu').find('li.active').removeClass('active');
+        
+        $(this).parents("li").addClass('active');
+
+    });
+
+    
+    let slider = $('.bxslider');
+
+    slider.bxSlider({
         auto: true,
         stopAutoOnClick: true,
         captions: true,
@@ -10,8 +22,28 @@ $(document).ready(function(){
         controls: true,
         
       });
+    
+    	//parallax
+	$(window).scroll(function(){
+		let barra = $(window).scrollTop();
+		let posicion = barra * 0.35;
 
-     
+		$('body').css({
+			'background-position': '0 -' + posicion + 'px'
+		});
+    });
+    
+    	//menu
+	let altura = $('.menu').offset().top;
+
+	$(window).on('scroll', function(){
+		if ( $(window).scrollTop() > altura) {
+			$('.menu').addClass('.menu-fixed');
+		}else{
+			$('.menu').removeClass('menu-fixed');
+		}
+	});
+
       //formato para fechas
     let options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
     let today  = new Date();
