@@ -2,17 +2,6 @@
 
 $(document).ready(function(){
     
-    //nav 
-
-    $('#menu a').click(function () {
-        
-        $('#menu').find('li.active').removeClass('active');
-        
-        $(this).parents("li").addClass('active');
-
-    });
-
-    
     let slider = $('.bxslider');
 
     slider.bxSlider({
@@ -46,7 +35,7 @@ $(document).ready(function(){
 	});
 
       //formato para fechas
-    let options = { weekday: 'Long', year: 'Numeric', month: 'Long', day: 'Numeric' };
+    let options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
     let today  = new Date();
 
        //POST
@@ -92,21 +81,18 @@ $(document).ready(function(){
       contenido.append(articulo);
       });
 
+      //temas
+
+      let tema =$('#theme');
+
+      $('.color1').click(function(){
+          theme.attr("href","css/color1.css");
+      });
+      $('.color2').click(function(){
+      theme.attr("href","css/color2.css");
+      });
+      $('.color2').click(function(){
+      theme.attr("href","css/color3.css");
+      });
 });
 
-/*
- <div class="post" id="posts">
-                <article id="articulo">
-                    <h2>Titulo del articulo</h2>
-                    <span id="date">fecha del articulo</span>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit autem asperiores blanditiis vero
-                        amet odit ab tenetur id nam, totam voluptatibus explicabo sunt perferendis nihil ex. Porro vitae
-                        eligendi illum!
-                    </p>
-                    <a href="#" class="btn-leer">Leer mas!</a>
-                    <hr>
-                </article>
-               
-            </div>
-*/

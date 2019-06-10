@@ -5,22 +5,44 @@
   text-decoration: none;
 }
 
-.menu-fixed {
-  position: fixed;
-  z-index: 10;
-  width: 70%;
-  top: 0;
-  height: 50px;
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
-}
-
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background: url("/IMG/35mm-aerial-aerial-shot-1105766.jpg");
   background-size: cover;
   background-attachment: fixed;
+}
+
+body .selector {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  width: 50px;
+  height: 110px;
+  background: white;
+  top: 40%;
+  background: rgba(6, 6, 6, 0.8);
+  -webkit-box-shadow: 0px 0px 10px -4px white;
+          box-shadow: 0px 0px 10px -4px white;
+}
+
+body .selector .color1, body .selector .color2, body .selector .color3 {
+  height: 25px;
+  width: 25px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background: #19455a;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid black;
 }
 
 body .container {
@@ -140,6 +162,7 @@ body .container .content .articulos {
   width: 100%;
   -webkit-box-shadow: 0px 0px 5px #0d3451;
           box-shadow: 0px 0px 5px #0d3451;
+  background: rgba(6, 6, 6, 0.8);
 }
 
 body .container .content .post {
@@ -177,6 +200,10 @@ body .container .content .post article h2 {
 body .container .content .post article #date {
   color: gray;
   font-style: italic;
+}
+
+body .container .content .post article #date:fist-letter {
+  text-transform: uppercase;
 }
 
 body .container .content .post article p {
@@ -403,4 +430,3 @@ body .foot .autor {
   height: 50px;
   font-style: italic;
 }
-/*# sourceMappingURL=main.css.map */
