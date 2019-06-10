@@ -71,17 +71,22 @@ body
                         display: flex
                         align-items: center
                         height: 46px
-                        padding: 0px 30px 0px 30px
+                        padding: 0px 20px
                         display: inline-block
                         transition: .7s all
                         border-bottom: 2px solid trasnparent
-                    
+                        
+                        
                         &:hover
                             background: $sombra
                             border-bottom: 2px solid red
                                                        
                         a   
-                            display: block
+                            display: block     
+                            position: relative   
+                            z-index: 1     
+                            padding: 0.3em 2em 
+                            margin: -0.3em   
                             color: white
                             
                        
@@ -105,11 +110,13 @@ body
             display: flex
             font-family: $monserrat
             height: auto
-                                
-            .post
+            .articulos
+                width: 100%
                 box-shadow: 0px 0px 5px $sombra
+            .post
                 display: flex
-                width: 60%
+                flex-direction: column
+                width: 100%
                 font-family: $ptseri
                 background: $fondo
                 color: #fff
@@ -163,7 +170,7 @@ body
                 display: flex
                 justify-content: center
                 flex-direction: column
-                width: 40%
+                width: 60%
                 height: 100%
                 background: $fondo
                 padding: 10px

@@ -84,7 +84,7 @@ body .container .header .menu ul li {
       -ms-flex-align: center;
           align-items: center;
   height: 46px;
-  padding: 0px 30px 0px 30px;
+  padding: 0px 20px;
   display: inline-block;
   -webkit-transition: .7s all;
   transition: .7s all;
@@ -98,6 +98,10 @@ body .container .header .menu ul li:hover {
 
 body .container .header .menu ul li a {
   display: block;
+  position: relative;
+  z-index: 1;
+  padding: 0.3em 2em;
+  margin: -0.3em;
   color: white;
 }
 
@@ -132,13 +136,21 @@ body .container .content {
   height: auto;
 }
 
-body .container .content .post {
+body .container .content .articulos {
+  width: 100%;
   -webkit-box-shadow: 0px 0px 5px #0d3451;
           box-shadow: 0px 0px 5px #0d3451;
+}
+
+body .container .content .post {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 60%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
   font-family: "PT Serif", serif;
   background: rgba(6, 6, 6, 0.8);
   color: #fff;
@@ -222,7 +234,7 @@ body .container .content .aside {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 40%;
+  width: 60%;
   height: 100%;
   background: rgba(6, 6, 6, 0.8);
   padding: 10px;

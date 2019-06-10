@@ -3,6 +3,7 @@
 $(document).ready(function(){
     
     //nav 
+
     $('#menu a').click(function () {
         
         $('#menu').find('li.active').removeClass('active');
@@ -45,7 +46,7 @@ $(document).ready(function(){
 	});
 
       //formato para fechas
-    let options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    let options = { weekday: 'Long', year: 'Numeric', month: 'Long', day: 'Numeric' };
     let today  = new Date();
 
        //POST
@@ -61,16 +62,51 @@ $(document).ready(function(){
                 "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus incidunt earum provident eius beatae accusantium consequatur! Quas, quibusdam animi ducimus, rem perspiciatis harum quod accusamus consectetur deleniti, veritatis cum rerum."
             },
             {
-                "title" : "Titulo 1 Descanso",
+                "title" : "Titulo 3 Descanso",
                 "date": today.toLocaleDateString("es-ES", options),
                 "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus incidunt earum provident eius beatae accusantium consequatur! Quas, quibusdam animi ducimus, rem perspiciatis harum quod accusamus consectetur deleniti, veritatis cum rerum."
             },
             {
-                "title" : "Titulo 1 Comidas",
+                "title" : "Titulo 4 Comidas",
                 "date": today.toLocaleDateString("es-ES", options),
                 "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus incidunt earum provident eius beatae accusantium consequatur! Quas, quibusdam animi ducimus, rem perspiciatis harum quod accusamus consectetur deleniti, veritatis cum rerum."
             },
       ];
 
-      console.log(post);
+      //usar el objeto/joson
+      post.forEach((item, index) =>{
+        let contenido = $('#posts'); 
+        let articulo = 
+        `<div class="post" id="posts">
+        <article id="articulo">
+            <h2>${item.title}</h2>
+            <span id="date">Publicado: ${item.date}</span>
+            <p>${item.content}</p>
+            <a href="#" class="btn-leer">Leer mas!</a>
+            <hr>
+        </article>
+        </div>`;
+      
+      //jquery para añadir divs
+      
+      contenido.append(articulo);
+      });
+
 });
+
+/*
+ <div class="post" id="posts">
+                <article id="articulo">
+                    <h2>Titulo del articulo</h2>
+                    <span id="date">fecha del articulo</span>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit autem asperiores blanditiis vero
+                        amet odit ab tenetur id nam, totam voluptatibus explicabo sunt perferendis nihil ex. Porro vitae
+                        eligendi illum!
+                    </p>
+                    <a href="#" class="btn-leer">Leer mas!</a>
+                    <hr>
+                </article>
+               
+            </div>
+*/
