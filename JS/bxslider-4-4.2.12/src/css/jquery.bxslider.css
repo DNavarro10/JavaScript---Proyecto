@@ -22,13 +22,16 @@ ul.bxslider {
   list-style: none;
 }
 .bx-viewport {
-  /*fix other elements on the page moving (on Chrome)*/
-  -webkit-transform: translatez(0);
+  /*fixotherelementsonthepagemoving(onChrome)*/
+  transform: translatez(0);;
+  -webkit-transform:translatez(0);;
+  -moz-transform:translatez(0);;
+  -ms-transform:translatez(0);;
+  -o-transform:translatez(0);;
 }
 /** THEME
 ===================================*/
 .bx-wrapper {
-  -moz-box-shadow: 0 0 5px #ccc;
   -webkit-box-shadow: 0 0 5px #ccc;
   box-shadow: 0 0 5px #ccc;
   border: 5px solid #fff;
@@ -68,8 +71,6 @@ ul.bxslider {
   height: 10px;
   margin: 0 5px;
   outline: 0;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
   border-radius: 5px;
 }
 .bx-wrapper .bx-pager.bx-default-pager a:hover,

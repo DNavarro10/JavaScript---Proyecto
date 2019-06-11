@@ -14,6 +14,8 @@ body {
 }
 
 body .selector {
+  -webkit-transform: translateX(-70px);
+          transform: translateX(-70px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -21,17 +23,25 @@ body .selector {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   position: fixed;
-  width: 50px;
+  width: 100px;
   height: 110px;
   background: white;
+  padding-right: 15px;
   top: 40%;
   background: rgba(6, 6, 6, 0.8);
   -webkit-box-shadow: 0px 0px 10px -4px white;
           box-shadow: 0px 0px 10px -4px white;
+  -webkit-transition: 1s all;
+  transition: 1s all;
+}
+
+body .selector:hover {
+  -webkit-transform: translateX(-55px);
+          transform: translateX(-55px);
 }
 
 body .selector .color1, body .selector .color2, body .selector .color3 {
@@ -43,6 +53,11 @@ body .selector .color1, body .selector .color2, body .selector .color3 {
   cursor: pointer;
   border-radius: 5px;
   border: 1px solid black;
+}
+
+body .selector .activa {
+  -webkit-box-shadow: 1px 1px 10px -4px white;
+          box-shadow: 1px 1px 10px -4px white;
 }
 
 body .container {
@@ -430,3 +445,4 @@ body .foot .autor {
   height: 50px;
   font-style: italic;
 }
+/*# sourceMappingURL=main.css.map */

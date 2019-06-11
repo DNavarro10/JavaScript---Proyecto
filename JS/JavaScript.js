@@ -1,9 +1,41 @@
 'use strict'
 
 $(document).ready(function(){
+    //Nav  active 
+    let lista = $('nav li');
+        lista.click(function() {
+        // remove classes from all
+        lista.removeClass("active");
+        // add class to the one we clicked
+        $(this).addClass("active");
+     });
+      //selector
     
-    let slider = $('.bxslider');
+    //   let selector = $('.selector div');
+    //     selector.click(function() {
+    //     // remove classes from all
+    //     selector.removeClass("activa");
+    //     // add class to the one we clicked
+    //     $(this).addClass("activa");
+    //  });
 
+      //temas
+
+      let theme = $('#theme');
+
+      $('.color1').click(function(){
+        theme.attr("href","CSS/theme/color1.css");
+      });
+      $('.color2').click(function(){
+        theme.attr("href","CSS/theme/color2.css");
+      });
+      $('.color2').click(function(){
+        theme.attr("href","CSS/theme/color3.css");
+      });
+     
+      
+    //slider
+    let slider = $('.bxslider');
     slider.bxSlider({
         auto: true,
         stopAutoOnClick: true,
@@ -23,17 +55,7 @@ $(document).ready(function(){
 		});
     });
     
-    	//menu
-	let altura = $('.menu').offset().top;
-
-	$(window).on('scroll', function(){
-		if ( $(window).scrollTop() > altura) {
-			$('.menu').addClass('.menu-fixed');
-		}else{
-			$('.menu').removeClass('menu-fixed');
-		}
-	});
-
+    	
       //formato para fechas
     let options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
     let today  = new Date();
@@ -81,18 +103,6 @@ $(document).ready(function(){
       contenido.append(articulo);
       });
 
-      //temas
-
-      let tema =$('#theme');
-
-      $('.color1').click(function(){
-          theme.attr("href","css/color1.css");
-      });
-      $('.color2').click(function(){
-      theme.attr("href","css/color2.css");
-      });
-      $('.color2').click(function(){
-      theme.attr("href","css/color3.css");
-      });
+    
 });
 
