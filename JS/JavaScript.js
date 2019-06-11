@@ -11,25 +11,25 @@ $(document).ready(function(){
      });
       //selector
     
-    //   let selector = $('.selector div');
-    //     selector.click(function() {
-    //     // remove classes from all
-    //     selector.removeClass("activa");
-    //     // add class to the one we clicked
-    //     $(this).addClass("activa");
-    //  });
+      let selector = $('.selector div');
+        selector.click(function() {
+        // remove classes from all
+        selector.removeClass("activa");
+        // add class to the one we clicked
+        $(this).addClass("activa");
+     });
 
       //temas
 
       let theme = $('#theme');
 
-      $('.color1').click(function(){
+      $('#theme-1').click(function(){
         theme.attr("href","CSS/theme/color1.css");
       });
-      $('.color2').click(function(){
+      $('#theme-2').click(function(){
         theme.attr("href","CSS/theme/color2.css");
       });
-      $('.color2').click(function(){
+      $('#theme-3').click(function(){
         theme.attr("href","CSS/theme/color3.css");
       });
      

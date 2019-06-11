@@ -37,6 +37,7 @@ body .selector {
           box-shadow: 0px 0px 10px -4px white;
   -webkit-transition: 1s all;
   transition: 1s all;
+  border-radius: 6px;
 }
 
 body .selector:hover {
@@ -49,15 +50,32 @@ body .selector .color1, body .selector .color2, body .selector .color3 {
   width: 25px;
   margin-top: 5px;
   margin-bottom: 5px;
-  background: #19455a;
   cursor: pointer;
   border-radius: 5px;
   border: 1px solid black;
 }
 
+body .selector .color1 {
+  background: #19455a;
+}
+
+body .selector .color2 {
+  background: #085f63;
+}
+
+body .selector .color3 {
+  background: #553c8b;
+}
+
+body .selector img {
+  padding: 1px;
+  width: 22px;
+  height: 22px;
+}
+
 body .selector .activa {
-  -webkit-box-shadow: 1px 1px 10px -4px white;
-          box-shadow: 1px 1px 10px -4px white;
+  -webkit-box-shadow: 1px 1px 10px -2px white;
+          box-shadow: 1px 1px 10px -2px white;
 }
 
 body .container {

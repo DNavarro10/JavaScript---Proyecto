@@ -7,14 +7,19 @@ body {
     
   }
 
-  body .selector .color1, body .selector .color2, body .selector .color3 {
+  .bx-viewport {
     
-    background: #553c8b;
-    background-size: cover;
-  background-attachment: fixed;
-  
+    background: #9ea9f0 !important;
   }
 
+  .bx-wrapper {
+    -webkit-box-shadow: 0 0 5px #9ea9f0 !important;
+    margin-top: 15px;
+    padding-bottom: 15px;
+    box-shadow: 0 0 5px #9ea9f0 !important;
+    
+    background: #9ea9f0 !important;
+  }
   body .container .header {
 
     -webkit-box-shadow: 0px 0px 5px #9ea9f0;

@@ -7,13 +7,21 @@ body {
     background-attachment: fixed;
     
   }
+  
+  
+  .bx-viewport {
 
-  body .selector .color1, body .selector .color2, body .selector .color3 {
-    
-    background: #19455a;
-    
+    background: #19455a !important;
   }
-
+  /** THEME
+  ===================================*/
+  .bx-wrapper {
+    -webkit-box-shadow: 0 0 5px #19455a !important;
+ 
+    box-shadow: 0 0 5px #19455a !important;
+    
+    background: #19455a !important;
+  }
   body .container .header {
 
     -webkit-box-shadow: 0px 0px 5px #0d3451;
