@@ -8,7 +8,7 @@
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: url("/IMG/35mm-aerial-aerial-shot-1105766.jpg");
+  background: url("/IMG/theme/tema-1.jpg");
   background-size: cover;
   background-attachment: fixed;
 }
@@ -170,7 +170,6 @@ body .container .slider {
   margin-bottom: 15px;
   font-family: "Montserrat", sans-serif;
   background: rgba(6, 6, 6, 0.8);
-  background-size: contain;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

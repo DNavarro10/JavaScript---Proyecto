@@ -1,23 +1,24 @@
 body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  background: url("/IMG/architecture-buildings-church-338515.jpg");
-    background-size: cover;
-    background-attachment: fixed; 
+  background: url("/IMG/theme/tema-2.jpg");
+  background-size: cover;
+    background-attachment: fixed;
+    
     
   }
 
   .bx-viewport {
  
-    background: #49beb7 !important;
+    background: #085f63 !important;
   }
  
   .bx-wrapper {
-    -webkit-box-shadow: 0 0 5px #49beb7 !important;
+    -webkit-box-shadow: 0 0 5px #085f63 !important;
   
-    box-shadow: 0 0 5px #49beb7 !important;
+    box-shadow: 0 0 5px #085f63 !important;
     
-    background: #49beb7 !important;
+    background: #085f63 !important;
   }
   body .container .header {
 
