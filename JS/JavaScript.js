@@ -8,7 +8,7 @@ $(document).ready(function () {
   sliderBox();
   parallax();
   contenido();
-
+  login();
   irArriba();
 
 });
@@ -124,17 +124,45 @@ function contenido() {
   });
 };
 
+//recoger datos de imputs
+function login(){
+  //formulario
+  var form = $('#login');
 
+  form.submit(function(){
+    var form_name = $('#form_name').val();
+    localStorage.setItem("form_name", form_name);
+
+    
+ 
+  //obtener el nombre
+  var form_name = localStorage.getItem("form_name");
+
+  if(form_name != null && form_name != "undefined"){
+    var nombre = $('#session');
+    var sobre = $('#about');
+    nombre.html("Bienvenido : " + form_name + " !");
+    nombre.append("<br><a href='#' class='cerrar' id='logout'>Cerrar</a>");
+   
+
+    $('#loguot').click(function(){
+      localStorage.clear();
+      location.reload();
+      
+    });
+  }
+
+};
 //boton de subir
 function irArriba() {
   let arriba =  $('.ir-arriba');
   let cuerpo = $('body,html');
 
-  arriba.click(function (e) {
-    e.preventDefault();
+  arriba.click(function () { 
     cuerpo.animate({ scrollTop: '0px' }, 1000); });
-  $(window).scroll(function () {
+  
+    $(window).scroll(function () {
     if ($(this).scrollTop() > 200) { arriba.fadeIn().slideDown(600); } else { arriba.fadeOut().slideUp(600); }
   });
  
-}
+};

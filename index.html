@@ -35,47 +35,48 @@
             <!--header-->
             <div class="logo">
                 <h1>Proyecto Js</h1>
+               
             </div>
+                   
             <nav class="menu">
                 <ul id="menu">
                     <li id="List" class="active"><a class="" href="#">Inicio</a></li>
                     <li id="List" class=""><a class="" href="#">Relog</a></li>
                     <li id="List" class=""><a class="" href="#">Sobre mi</a></li>
                     <li id="List" class=""><a class="" href="#">Contacto</a></li>
+                    
                 </ul>
+                
             </nav>
         </div>
-
         <!--Slider-->
-
         <div class="slider bxslider">
-            <div><img src="IMG/slider/cuidad1.jpeg" title="City - 1"></div>
-            <div><img src="IMG/slider/cuidad2.jpeg" title="City - 2"></div>
-            <div><img src="IMG/slider/cuidad3.jpg" title="City - 3"></div>
+            <div><img src="IMG/slider/nature-1.jpg" title="City - 1"></div>
+            <div><img src="IMG/slider/nature-2.jpg" title="City - 2"></div>
+            <div><img src="IMG/slider/nature-3.jpg" title="City - 3"></div>
 
         </div>
         <!--Contenido-->
         <section class="content">
-
-
             <div class="articulos" id="posts">
                 <!--Post desde Javascript usando Json/Jquery-->
-
             </div>
-
-
 
             <aside id="side" class="aside">
                 <div class="about">
-                    <h4>¿Quien soy?</h4>
+                    <h4 id="about">¿Quien soy?</h4>
+                    <div>
+                    <h3 id="session"></h3>
+                    
+                        <!-- <input type="submit" class="btn-enviar" value="Salir" id="logout"> -->
+                    </div>
                     <img src="IMG/Main/edificio.jpg" alt="sobre">
                     <p>Lorem ipsum dolor sit amet consectetur.</p>
                 </div>
-                <div class="login">
-
+                <div class="login" id="login">
                     <div class="form">
                         <table>
-                            <form action="#">
+                            <form action="#" id="form">
                                 <thead>
                                     <h4>Indentificate</h4>
                                 </thead>
@@ -83,19 +84,19 @@
 
                                     <tr>
                                         <td class="fila"><label for="name">Nombre:</label></td>
-                                        <td><input type="text" name="name" /></td>
+                                        <td><input type="text" name="name" id="form_name" /></td>
                                     </tr>
                                     <tr>
                                         <td class="fila"><label for="email">Correo:</label></td>
-                                        <td><input type="text" name="email" id="" /></td>
+                                        <td><input type="text" name="email" id="form_mail" /></td>
                                     </tr>
                                     <tr>
                                         <td class="fila"><label for="password" name="password">Password:</label></td>
-                                        <td><input type="password" name="password" id="pass" /></td>
+                                        <td><input type="password" name="password" id="form_pass" /></td>
                                     </tr>
                                     <tr>
                                         <td colspan="2">
-                                            <input type="submit" name="submit" class="btn-enviar" value="Entrar">
+                                            <input type="submit" name="submit" class="btn-enviar" value="Entrar" id="enviar">
                                         </td>
                                     </tr>
                                 </tbody>
@@ -103,9 +104,7 @@
 
                             </form>
                         </table>
-
                     </div>
-
                 </div>
             </aside>
         </section>
@@ -118,7 +117,7 @@
             </div>
             <div class="ir-arriba">
                 <!-- boton para subir -->
-               
+
             </div>
             <footer>
 
