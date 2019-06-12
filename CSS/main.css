@@ -462,4 +462,19 @@ body .foot .autor {
   height: 50px;
   font-style: italic;
 }
+
+body .foot .ir-arriba {
+  display: block;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 1px solid white;
+  background: url("/IMG/icon/flecha.png");
+  background-size: cover;
+  cursor: pointer;
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  z-index: 2;
+}
 /*# sourceMappingURL=main.css.map */
