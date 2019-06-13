@@ -134,7 +134,7 @@ function login(){
     localStorage.setItem("form_name", form_name);
 
     
- 
+  });
   //obtener el nombre
   var form_name = localStorage.getItem("form_name");
 
@@ -149,9 +149,9 @@ function login(){
       localStorage.clear();
       location.reload();
       
+   
     });
   }
-
 };
 //boton de subir
 function irArriba() {
