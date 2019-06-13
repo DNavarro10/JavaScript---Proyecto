@@ -6,9 +6,10 @@ $(document).ready(function () {
   selectTheme();
   theme();
   sliderBox();
-  parallax();
+  // parallax();
   contenido();
   login();
+  // logout();
   irArriba();
 
 });
@@ -127,31 +128,31 @@ function contenido() {
 //recoger datos de imputs
 function login(){
   //formulario
-  var form = $('#login');
+ var about = $('#about');
 
-  form.submit(function(){
+ $('#login #form').submit(function(){
     var form_name = $('#form_name').val();
     localStorage.setItem("form_name", form_name);
-
     
   });
-  //obtener el nombre
+ 
+//logout
+};
   var form_name = localStorage.getItem("form_name");
 
   if(form_name != null && form_name != "undefined"){
-    var nombre = $('#session');
-    var sobre = $('#about');
-    nombre.html("Bienvenido : " + form_name + " !");
-    nombre.append("<br><a href='#' class='cerrar' id='logout'>Cerrar</a>");
+    var session =$('#session'); 
+    session.html("<strong>Bienvenido, <span> " + form_name + " !</span></strong>");
+    session.append("<br><br><a href='#' id='logout' class='cerrar'>Cerrar</a>");
+    $('#login').hide();
    
-
-    $('#loguot').click(function(){
+    $('#logout').click(function(){
       localStorage.clear();
+     
       location.reload();
-      
-   
+     
     });
-  }
+    
 };
 //boton de subir
 function irArriba() {

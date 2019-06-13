@@ -317,20 +317,24 @@ body .container .content .aside .about {
   color: white;
 }
 
-body .container .content .aside .about div {
-  width: 80%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -ms-flex-item-align: center;
-      align-self: center;
+body .container .content .aside .about .nombre {
+  text-align: center;
 }
 
-body .container .content .aside .about div h3 {
-  width: 100%;
-  text-align: center;
+body .container .content .aside .about .nombre span {
+  color: #ffaa;
+  text-shadow: 1px 1px 3px back;
+}
+
+body .container .content .aside .about .nombre a {
+  color: #ffaa;
+  -webkit-transition: 1s all;
+  transition: 1s all;
+}
+
+body .container .content .aside .about .nombre a:hover {
+  color: #ffff;
+  text-shadow: 1px 1px 3px black;
 }
 
 body .container .content .aside .about a {
