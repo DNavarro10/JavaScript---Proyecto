@@ -188,6 +188,7 @@ body .container .content {
   display: flex;
   font-family: "Montserrat", sans-serif;
   height: auto;
+  margin-top: 20px;
 }
 
 body .container .content .articulos {
@@ -211,7 +212,32 @@ body .container .content .post {
   color: #fff;
 }
 
-body .container .content .post article {
+body .container .content h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  color: #fff;
+  font-family: serif;
+}
+
+body .container .content #acordeon {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+body .container .content #relog {
+  font-size: 40px;
+  font-weight: bold;
+  font-family: Helvetica, Arial;
+  color: #fff;
+  border: 5px dashed #085f63;
+  width: 30%;
+  padding: 30px;
+  margin: 0px auto;
+}
+
+body .container .content #relog article {
   margin-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -223,28 +249,28 @@ body .container .content .post article {
           flex-direction: column;
 }
 
-body .container .content .post article h2 {
+body .container .content #relog article h2 {
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
   font-size: 25px;
 }
 
-body .container .content .post article #date {
+body .container .content #relog article #date {
   color: gray;
   font-style: italic;
 }
 
-body .container .content .post article #date:fist-letter {
+body .container .content #relog article #date:fist-letter {
   text-transform: uppercase;
 }
 
-body .container .content .post article p {
+body .container .content #relog article p {
   text-align: justify;
   margin-top: 15px;
   font-family: "Montserrat", sans-serif;
 }
 
-body .container .content .post article .btn-leer {
+body .container .content #relog article .btn-leer {
   text-align: center;
   font-family: "Noto Sans", sans-serif;
   -ms-flex-item-align: end;
@@ -262,11 +288,11 @@ body .container .content .post article .btn-leer {
           box-shadow: 1px 1px 5px #0d3451;
 }
 
-body .container .content .post article .btn-leer:hover {
+body .container .content #relog article .btn-leer:hover {
   background: #0d3451;
 }
 
-body .container .content .post hr {
+body .container .content #relog hr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

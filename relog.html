@@ -11,12 +11,12 @@
     <link id="theme" rel="stylesheet" href="CSS/theme/color1.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Noto+Sans|PT+Serif&display=swap" rel="stylesheet">
     <link rel="icon" href="IMG/icon/tab.ico" type="image/x-icon">
-
-
+    <!-- moment -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/es.js"></script>
     <!-- slider -->
     <script src="JS/JQuery/jquery.min.js"></script>
-    <link rel="stylesheet" href="/JS/bxslider-4-4.2.12/dist/jquery.bxslider.css">
-    <script src="/JS/bxslider-4-4.2.12/dist/jquery.bxslider.min.js"></script>
+
     <title>Proyecto JavaScript
     </title>
 </head>
@@ -35,31 +35,25 @@
             <!--header-->
             <div class="logo">
                 <h1>Proyecto Js</h1>
-               
+
             </div>
-                   
+
             <nav class="menu">
                 <ul id="menu">
-                    <li id="List" class="active"><a class="" href="index.html">Inicio</a></li>
-                    <li id="List" class=""><a class="" href="relog.html">Relog</a></li>
+                    <li id="List" class=""><a class="" href="index.html">Inicio</a></li>
+                    <li id="List" class="active"><a class="" href="relog.html">Relog</a></li>
                     <li id="List" class=""><a class="" href="about.html">Sobre mi</a></li>
                     <li id="List" class=""><a class="" href="contact.html">Contacto</a></li>
-                    
+
                 </ul>
-                
+
             </nav>
         </div>
-        <!--Slider-->
-        <div class="slider bxslider">
-            <div><img src="IMG/slider/nature-1.jpg" title="City - 1"></div>
-            <div><img src="IMG/slider/nature-2.jpg" title="City - 2"></div>
-            <div><img src="IMG/slider/nature-3.jpg" title="City - 3"></div>
 
-        </div>
         <!--Contenido-->
         <section class="content">
             <div class="articulos" id="posts">
-                <!--Post desde Javascript usando Json/Jquery-->
+                <div id="reloj"></div>
             </div>
 
             <aside id="side" class="aside">
@@ -93,7 +87,8 @@
                                     </tr>
                                     <tr>
                                         <td colspan="2">
-                                            <input type="submit" name="submit" class="btn-enviar" value="Entrar" id="enviar">
+                                            <input type="submit" name="submit" class="btn-enviar" value="Entrar"
+                                                id="enviar">
                                         </td>
                                     </tr>
                                 </tbody>
@@ -120,7 +115,7 @@
 
     </div>
 
-    <script src="JS/JavaScript.js"></script>
+    <script src="JS/JavaScript-relog.js"></script>
 </body>
 
 </html>

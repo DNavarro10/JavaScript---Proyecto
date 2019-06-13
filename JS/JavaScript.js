@@ -6,10 +6,9 @@ $(document).ready(function () {
   selectTheme();
   theme();
   sliderBox();
-  // parallax();
+  parallax();
   contenido();
   login();
-  // logout();
   irArriba();
 
 });
