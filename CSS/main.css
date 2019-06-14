@@ -112,7 +112,6 @@ body .container .header .logo h1 {
 }
 
 body .container .header .menu {
-  width: 100%;
   text-transform: uppercase;
   margin-bottom: 20px;
   -webkit-transition: 0.7s all;
@@ -126,6 +125,7 @@ body .container .header .menu .active {
 }
 
 body .container .header .menu ul {
+  width: 100%;
   line-height: 46px;
   height: 100%;
   background: #19455a;
@@ -191,6 +191,120 @@ body .container .content {
   margin-top: 20px;
 }
 
+body .container .content .box {
+  color: white;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container .content #acordeon {
+  padding: 20px;
+  margin-top: 20px;
+}
+
+body .container .content #reloj {
+  font-size: 60px;
+  font-weight: bold;
+  font-family: Helvetica, Arial;
+  color: white;
+  border: 5px dashed #19455a;
+  width: 30%;
+  padding: 40px;
+  margin: 0px auto;
+  margin-top: 160px;
+}
+
+body .container .content #form_contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #19455a;
+  border-radius: 6px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  width: 60%;
+  margin-top: 15px;
+  font-family: "Montserrat", sans-serif;
+  -webkit-box-shadow: 1px 1px 5px #0d3451;
+          box-shadow: 1px 1px 5px #0d3451;
+}
+
+body .container .content #form_contact label {
+  display: block;
+  width: 100%;
+  margin-top: 5px;
+  padding-bottom: 10px;
+  font-size: 14px;
+}
+
+body .container .content #form_contact .form-error {
+  background: red;
+  color: white;
+  padding: 10px;
+  width: 94%;
+}
+
+body .container .content #form_contact h2 {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+body .container .content #form_contact input[type="text"], body .container .content #form_contact input[type="password"], body .container .content #form_contact input[type="email"], body .container .content #form_contact .select, body .container .content #form_contact input[type="number"] {
+  margin: 0 auto;
+  width: 50%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+body .container .content #form_contact .select {
+  width: 55%;
+}
+
+body .container .content #form_contact .btn-enviar {
+  margin: 0 auto;
+  font-family: "Noto Sans", sans-serif;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  font-weight: bolder;
+  width: 70px;
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 6px;
+  background: #19455a;
+  color: white;
+  margin-top: 10px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  -webkit-box-shadow: 0px 0px 2px white;
+          box-shadow: 0px 0px 2px white;
+  border: 0px solid;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+body .container .content #form_contact .btn-enviar:hover {
+  background: #0d3451;
+}
+
 body .container .content .articulos {
   width: 100%;
   -webkit-box-shadow: 0px 0px 5px #0d3451;
@@ -212,32 +326,7 @@ body .container .content .post {
   color: #fff;
 }
 
-body .container .content h2 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 30px;
-  color: #fff;
-  font-family: serif;
-}
-
-body .container .content #acordeon {
-  font-family: "Montserrat", sans-serif;
-  font-size: 20px;
-  padding: 20px;
-  margin-top: 20px;
-}
-
-body .container .content #relog {
-  font-size: 40px;
-  font-weight: bold;
-  font-family: Helvetica, Arial;
-  color: #fff;
-  border: 5px dashed #085f63;
-  width: 30%;
-  padding: 30px;
-  margin: 0px auto;
-}
-
-body .container .content #relog article {
+body .container .content .post article {
   margin-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -249,28 +338,28 @@ body .container .content #relog article {
           flex-direction: column;
 }
 
-body .container .content #relog article h2 {
+body .container .content .post article h2 {
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
   font-size: 25px;
 }
 
-body .container .content #relog article #date {
+body .container .content .post article #date {
   color: gray;
   font-style: italic;
 }
 
-body .container .content #relog article #date:fist-letter {
+body .container .content .post article #date:fist-letter {
   text-transform: uppercase;
 }
 
-body .container .content #relog article p {
+body .container .content .post article p {
   text-align: justify;
   margin-top: 15px;
   font-family: "Montserrat", sans-serif;
 }
 
-body .container .content #relog article .btn-leer {
+body .container .content .post article .btn-leer {
   text-align: center;
   font-family: "Noto Sans", sans-serif;
   -ms-flex-item-align: end;
@@ -288,11 +377,11 @@ body .container .content #relog article .btn-leer {
           box-shadow: 1px 1px 5px #0d3451;
 }
 
-body .container .content #relog article .btn-leer:hover {
+body .container .content .post article .btn-leer:hover {
   background: #0d3451;
 }
 
-body .container .content #relog hr {
+body .container .content .post hr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

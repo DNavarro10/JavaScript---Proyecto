@@ -9,6 +9,7 @@ $(document).ready(function () {
   parallax();
   contenido();
   login();
+  logout();
   irArriba();
 
 });
@@ -137,6 +138,8 @@ function login(){
  
 //logout
 };
+
+function logout(){
   var form_name = localStorage.getItem("form_name");
 
   if(form_name != null && form_name != "undefined"){
@@ -153,6 +156,7 @@ function login(){
     });
     
 };
+}
 //boton de subir
 function irArriba() {
   let arriba =  $('.ir-arriba');

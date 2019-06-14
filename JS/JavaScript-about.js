@@ -7,8 +7,11 @@ $(document).ready(function () {
   theme();
   parallax();
   login();
+  logout();
   acordeon();
   irArriba();
+  relog();
+  validate();
 
 });
 
@@ -75,6 +78,7 @@ function login(){
  
 //logout
 };
+function logout(){
   var form_name = localStorage.getItem("form_name");
 
   if(form_name != null && form_name != "undefined"){
@@ -89,6 +93,8 @@ function login(){
       location.reload();
      
     });
+    
+};
     
 };
 //boton de subir
@@ -110,3 +116,25 @@ function acordeon(){
 		$("#acordeon").accordion();
 	}
 };
+
+function validate(){
+  $("form input[name='date']").datepicker({
+    dateFormat: 'dd-mm-yy'
+  });
+
+  $.validate({
+      lang: 'es',
+      errorMessagePosition: 'top',
+      scrollToTopOnError: true
+  });
+
+}
+function relog(){
+
+  setInterval(function(){
+    var reloj = moment().format("hh:mm:ss");
+    $('#reloj').html(reloj);
+}, 1000);
+
+};
+

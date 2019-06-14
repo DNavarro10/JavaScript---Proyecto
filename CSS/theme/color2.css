@@ -7,7 +7,7 @@ body {
     
     
   }
-
+  
   .bx-viewport {
  
     background: #085f63 !important;
@@ -77,6 +77,24 @@ body {
     background: #49beb7;
   }
 
+    /* formulario contacto */
+    body .container .content .box #form_contact {
+      background: #0d3451;
+  
+      -webkit-box-shadow: 1px 1px 5px #49beb7;
+              box-shadow: 1px 1px 5px #49beb7;
+    }
+  
+    body .container .content .box .btn-enviar {
+      
+      background: #0d3451;
+   
+    }
+    
+    body .container .content .box .btn-enviar:hover {
+      background: #085f63;
+    }
+    /* fin de contacto  */
   body .container .content .post hr {
    
     background: #085f63;

@@ -71,7 +71,6 @@ body
         margin-top: 25px
         
         .header 
-            
             margin-top: 10px
             display: flexbox
             padding: 20px
@@ -93,7 +92,6 @@ body
                     text-shadow: 1px 1px 10px black
                     color: white
             .menu   
-                width: 100%
                 text-transform: uppercase
                 margin-bottom: 20px
                 transition: 0.7s all
@@ -103,6 +101,7 @@ body
                         background: $sombra1
                         border-bottom: 2px solid red
                 ul
+                    width: 100%
                     line-height: 46px
                     height: 100%
                     background: $color1
@@ -150,6 +149,88 @@ body
             font-family: $monserrat
             height: auto
             margin-top: 20px
+                
+            .box //contactos
+                color: white
+                margin-top: 20px
+                display: flex
+                height: 100%
+                flex-direction: column
+                align-items: center
+            #acordeon
+                padding: 20px
+                margin-top: 20px    
+            #reloj
+                
+                font-size: 60px
+                font-weight: bold
+                font-family: Helvetica, Arial
+                color: white
+                border: 5px dashed $color1
+                width: 30%
+                padding: 40px
+                margin: 0px auto
+                margin-top: 160px
+                
+            #form_contact
+                
+                display: flex
+                background: $color1
+                border-radius: 6px
+                flex-direction: column
+                align-content: center
+                text-align: center
+                width: 60%
+                margin-top: 15px
+                font-family: $monserrat
+                box-shadow: 1px 1px 5px $sombra1
+                label
+                    display: block
+                    width: 100%
+                    margin-top: 5px
+                    padding-bottom: 10px
+                    font-size: 14px
+                .form-error  
+                    background: red
+                    color: white
+                    padding: 10px
+                    width: 94%	
+                    
+                h2 
+                    align-content: center
+                    margin-top: 20px
+                    margin-bottom: 10px
+                
+                input[type="text"],input[type="password"],input[type="email"], .select, input[type="number"]
+                    margin: 0 auto
+                    width: 50%
+                    padding: 5px
+                    margin-bottom: 10px
+                    border-radius: 3px
+                    border: 1px solid #ccc
+                .select
+                   width: 55%
+                .btn-enviar
+                    margin: 0 auto
+                    font-family: $noto
+                    align-self: flex-end
+                    font-weight: bolder
+                    width: 70px
+                    font-size: 14px
+                    padding: 10px
+                    border-radius: 6px
+                    background: $color1
+                    color: white
+                    margin-top: 10px
+                    transition: all .3s
+                    box-shadow: 0px 0px 2px white
+                    border: 0px solid 
+                    margin-bottom: 30px
+                    cursor: pointer
+                    
+                    &:hover
+                        background: $sombra1
+
             .articulos
                 width: 100%
                 box-shadow: 0px 0px 5px $sombra1
@@ -161,25 +242,7 @@ body
                 font-family: $ptseri
                 background: $fondo
                 color: #fff
-            h2  
-                font-family: $monserrat
-                font-size: 30px
-                color: #fff
-                font-family: serif
-            #acordeon
-                font-family: $monserrat
-                font-size: 20px
-                padding: 20px
-                margin-top: 20px
-            #relog
-                font-size: 40px
-                font-weight: bold
-                font-family: Helvetica, Arial
-                color: #fff
-                border: 5px dashed $color2
-                width: 30%
-                padding: 30px
-                margin: 0px auto
+                
                 article
                     margin-top: 10px
                     display: flex

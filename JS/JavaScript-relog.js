@@ -106,7 +106,7 @@ function irArriba() {
 };
 
 function relog(){
-  if(window.location.href.indexOf('reloj') > -1){ //verifica si esta en relog
+  //verifica si esta en relog
 
 		setInterval(function(){
 				var reloj = moment().format("hh:mm:ss");
@@ -114,6 +114,6 @@ function relog(){
 		}, 1000);
 		
 	
-	}
+	
 
 }

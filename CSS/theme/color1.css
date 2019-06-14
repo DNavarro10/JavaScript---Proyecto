@@ -68,7 +68,24 @@ body {
     background: rgba(6, 6, 6, 0.8);
     color: #fff;
   }
+  /* formulario contacto */
+  body .container .content .box #form_contact {
+    background: #19455a;
 
+    -webkit-box-shadow: 1px 1px 5px #0d3451;
+            box-shadow: 1px 1px 5px #0d3451;
+  }
+
+  body .container .content .box .btn-enviar {
+    
+    background: #19455a;
+ 
+  }
+  
+  body .container .content .box .btn-enviar:hover {
+    background: #0d3451;
+  }
+  /* fin de contacto  */
   body .container .content .post article .btn-leer {
     
     background: #19455a;
