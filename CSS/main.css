@@ -213,13 +213,13 @@ body .container .content #acordeon {
 }
 
 body .container .content #reloj {
-  font-size: 60px;
+  font-size: 45px;
   font-weight: bold;
   font-family: Helvetica, Arial;
   color: white;
   border: 5px dashed #19455a;
   width: 30%;
-  padding: 40px;
+  padding: 50px;
   margin: 0px auto;
   margin-top: 160px;
 }

@@ -1,11 +1,10 @@
 'use strict'
-
 $(document).ready(function () {
 
   navSelect();
   selectTheme();
   theme();
-  parallax();
+ 
   login();
   irArriba();
   relog();
@@ -116,4 +115,4 @@ function relog(){
 	
 	
 
-}
+};
