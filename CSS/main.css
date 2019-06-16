@@ -322,7 +322,6 @@ body .container .content .post {
           flex-direction: column;
   width: 100%;
   font-family: "PT Serif", serif;
-  background: rgba(6, 6, 6, 0.8);
   color: #fff;
 }
 
@@ -620,4 +619,4 @@ body .foot .ir-arriba {
   right: 20px;
   z-index: 2;
 }
-/*# sourceMappingURL=main.css.map */
+

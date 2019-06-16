@@ -35,6 +35,7 @@ function selectTheme() {
     $(this).addClass("activa");
   });
 };
+
 //temas
 function theme() {
   let theme = $('#theme');
@@ -114,7 +115,7 @@ function contenido() {
             <h2>${item.title}</h2>
             <span id="date">Publicado: ${item.date}</span>
             <p>${item.content}</p>
-            <a href="#" class="btn-leer">Leer mas!</a>
+            <a href="#" class="btn-leer" id='content'>Leer mas!</a>
             <hr>
         </article>
         </div>`;
